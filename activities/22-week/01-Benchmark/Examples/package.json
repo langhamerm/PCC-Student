@@ -1,0 +1,16 @@
+{
+  "name": "Examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node --max-old-space-size=4096 linearSearch.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "benchmark": "^2.1.1"
+  }
+}
