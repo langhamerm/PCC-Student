@@ -1,0 +1,14 @@
+body {
+  background-color: #efeee7;
+  font: Georgia, "Times New Roman", Times, serif;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background-color: #333333;
+}
+h1 {
+  color: #eee;
+  font-size: 28px;
+}
