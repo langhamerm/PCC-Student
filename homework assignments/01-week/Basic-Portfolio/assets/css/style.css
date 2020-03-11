@@ -1,0 +1,46 @@
+ body {
+    background: url(canadian-dollar.png) right bottom repeat;
+
+ }
+ 
+ 
+ .topdog  {
+    font-family: Georgia, Times, Times New Roman, serif;
+    color: #4aaaa5;
+    background-color: #ffffff;
+    width: 960px;
+    margin-left: 2in;
+    
+}
+
+    .topdog-right{
+        float: right;
+        
+
+    }
+    /* Style the header links */
+.topdog a {
+    
+    color: #4aaaa5;
+    text-align: center;
+    padding: 12px;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 25px;
+    border-radius: 4px;
+  }
+  .topdog a.name {
+        font-size: 25px;
+        font-weight: bold;
+        color: #ffffff;
+        background-color: #4aaaa5;
+  }
+  section {
+    width: 960px;
+    float: left;
+    padding: 20px;
+    margin-left: 2in;
+    background-color: #ffffff;
+
+  }
+  
