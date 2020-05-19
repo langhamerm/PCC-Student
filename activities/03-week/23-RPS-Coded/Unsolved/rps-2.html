@@ -8,6 +8,29 @@
 </head>
 
 <body>
+ <!-- ### Rock Paper Scissors Pseudocode
+1. User chooses r, p, or s on keyboard representing rock, paper, or scissors.
+2. Computer chooses a random value in a list of r, p, or s.
+3. We determine if the user wins or not.
+   * If user picks rock and if computer picks scissors then user wins.
+   * If user picks rock and if computer picks paper then user loses.
+   * If user picks scissors and if computer picks rock then user loses.
+   * If user picks scissors and if computer picks paper then user wins.
+   * If user picks paper and if computer picks rock then user wins.
+   * If user picks paper and if computer picks scissors then user loses.
+   * If user picks the same as computer then they tie.
+4. We then add to their score.
+   * If user wins then we add one to their wins.
+    
+   * If user loses then we add one to their losses.
+    
+   * If user ties then we add one to their ties.
+5. The user then presses r, p, or s to play again.
+Collapse-->
+
+
+
+
 
   <div id="game">
 
@@ -34,6 +57,37 @@
       alert("Computer guess: " + computerGuess);
 
     };
+
+var userScore=0;
+var computerScore=0;
+    // * If user and computer pick the same add to their score.
+
+  if (computerGuess===userGuess) {
+    userScore ++;
+    computerScore ++;
+   }
+
+   if ((computerGuess==="r") && (userGuess==="s")) {
+     computerScore ++;
+   }
+   if ((computerGuess==="p") && (userGuess==="s")) {
+     userScore ++;
+   }
+   if ((computerGuess==="p") && (userGuess==="r")) {
+     computerScore ++;
+   }
+   
+
+   if ((computerGuess==="r") && (userGuess==="p")) {
+     userScore ++;
+   }
+   if ((computerGuess==="s") && (userGuess==="r")) {
+     userScore ++;
+   }
+   if ((computerGuess==="s") && (userGuess==="p")) {
+     computerScore ++;
+   }
+
   </script>
 
 </body>

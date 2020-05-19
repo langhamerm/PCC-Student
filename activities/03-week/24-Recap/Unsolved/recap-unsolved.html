@@ -7,7 +7,17 @@
   <body>
 
     <h1>Open the console to see the magic!</h1>
+    <button onclick="printstude()">Row 1</button>
+    <button onclick="jays()">Jays in Row 2</button>
 
+    <p id="emo"></p>students</p>
+    <p id="emo0"></p>-</p>
+    <p id="emo1"></p>-</p>
+    <p id="emo2"></p>-</p>
+    <p id="emo3"></p>-</p>
+    <p id="emo4"></p-</p>
+    <p id="emo5"></p>-</p>
+    <p id="emo6"></p>-</p>
     <script>
 
       // Instructions:
@@ -23,6 +33,32 @@
 
 
       // How do we print out every single student in Row 1?
+      function printstude() {
+  var l1 = studentsRow1.length ;
+ 
+  var l3 = studentsRow3.length ;
+
+
+  for (let i=0; i<l1; i++) {
+    var sname = studentsRow1[i];
+  
+    document.getElementById("emo" + i).innerHTML = sname;
+
+  }
+      
+  function jays() {
+    var l2 = studentsRow2.length ;
+    for (let i=0; i<l2; i++) {
+      var snameJ = studentsRow2[i];
+      var n = snameJ.startsWith("J");
+      if (n === true) {
+        document.getElementById("emo" +i).innerHTML = snameJ
+      }
+    
+    }
+  }
+  
+};
 
 
       // How do we print out every student in Row 2 whose first name begins with J?

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>My First Object</title>
+  </head>
+  <body>
+<h1>Lets Get this Crazy!0</h1> <br>
+<h2>Make sure you follow the rules of the Road</h2>
+<h2>Press h - to Honk</h2>
+<h2>Press d - to drive to work</h2>
+<h2>Press w - drive around the world</h2>
+<h2>Press t - Tune up your damn vehicle</h2>
+    <script>
+
+      var car = {
+        make: "Honda",
+        model: "Fit",
+        color: "Blue Raspberry",
+        mileage: 3000,
+        isWorking: true,
+
+        driveToWork: function() {
+
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 8;
+
+          alert("New mileage: " + this.mileage);
+        },
+
+        driveAroundWorld: function() {
+
+          alert("Old Mileage: " + this.mileage);
+
+          this.mileage = this.mileage + 24000;
+
+          alert("New Mileage: " + this.mileage);
+          alert("this needs a tuneup!");
+
+          this.isWorking = false;
+        },
+
+        getTuneUp: function() {
+          alert("this is ready to go!");
+          this.isWorking = true;
+        },
+
+        honk: function() {
+          alert("Honk! Honk!");
+        }
+      };
+      function writeStats () {
+        console.log("make:  " + car.make);
+        console.log("model: " + car.model);
+        console.log("mileage: " + car.mileage);
+        console.log("color" + car.color);
+        console.log("dummy light: " + car.isWorking);
+        console.log("----------------------------");
+      }
+        document.onkeyup = function(event) {
+            // var symbol = String.fromCharCode(event.keyCode).toLowerCase();
+            var symbol = event.key.toLowerCase();
+            if (symbol === "h") {
+                car.honk();
+                writeStats();
+            }
+            if (symbol === "d") {
+                car.driveToWork();
+                writeStats();
+            }
+            if (symbol === "w") {
+                car.driveAroundWorld();
+                writeStats();
+            }
+            if (symbol === "t") {
+                car.getTuneUp();
+                writeStats();
+            }
+        }
+      // How would we log...
+
+      // The this's make? 
+      
+
+      // The this's model?
+      
+      // The this's mileage?
+     
+
+      // How would we run the this's driveToWork method?
+
+
+    </script>
+    
+  </body>
+</html>

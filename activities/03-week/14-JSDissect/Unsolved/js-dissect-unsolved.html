@@ -8,37 +8,38 @@
   </head>
   <body>
     <script type="text/javascript">
-
+      //These variables are storing user input //
       var userName = prompt("What's your name?");
       var confirmCats = confirm("Do you like cats?");
-
+      // These variables are storing predetermined values //
       var petName = "Meeses";
       var petType = "Tuxedo Cat";
       var petAge = 5;
       var petIsCat = true;
-
+      /* checking if the user input is true then alert the user the predetermined 
+      cat name and cat type along with ageof cat */
       if (confirmCats) {
         alert(petName + " " + petType + " " + petAge);
       }
-      else {
+      else { /*otherwise it denies the user this info */
         alert("You don't get my cat's information");
       }
 
-      if (petIsCat) {
+      if (petIsCat) { /* because petIsCat is set to true then it alert the user this*/
         alert("My pet is a cat");
       }
       else {
         alert("My pet is not a cat");
       }
 
-      if (petAge !== 7) {
+      if (petAge !== 7) { /*because the petAge was set at 5, this will trigger */
         alert("My pet is not 7 years old");
       }
 
-      if (petAge === 5) {
+      if (petAge === 5) { /*because petAge was set to 5 in the beginning this will alert*/
         alert("My pet is 5 years old");
       }
-      else if (petAge < 5) {
+      else if (petAge < 5) {/*these last two conditions will not be met and wont trigger*/
         alert("My pet is less than 5 years old");
       }
       else {

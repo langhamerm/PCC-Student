@@ -1,0 +1,26 @@
+#parentGameButtons {
+    margin: 25px auto auto 10px;
+    height: 200px;
+    width: 600px;
+}
+.box {
+    width: 130px;
+    height: 100px;
+    margin: 0 10px 0 10px;
+    float: left;
+    overflow: hidden
+}
+
+#parentScore {
+    margin: 25px auto auto 10px;
+    width: 330px;
+    height: 250px;
+    position: relative;
+}
+
+.score {
+    margin: 25px auto auto 10px;
+    width: 100%;
+    height: 25%;
+    background-color: #4aaaa5;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Rock Paper Scissors Part 2</title>
+  </head>
+  <body>
+    <div id="game">
+      <div id="computer"></div>
+      <div id="user"></div>
+      <div id="wins"></div>
+      <div id="losses"></div>
+    </div>
+    <script type="text/javascript">
+          // Creates an array that lists out all of the options (Rock, Paper, or Scissors).
+          var computerChoices = ["r", "p", "s"];
+          var wins = 0;
+          var losses = 0;
+          // This function is run whenever the user presses a key.
+          document.onkeyup = function(event) {
+            // Determines which key was pressed.
+            var user = event.key;
+            // element by id
+            var userInput = document.getElementById("user");
+            var compInput = document.getElementById("computer");
+            var winsSection = document.getElementById("wins");
+            var lossSection = document.getElementById("losses");
+            // Randomly chooses a choice from the options array. This is the Computer's guess.
+            var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
+            // Determines the outcome of the game (win or loose) increments the appropriate score variable
+            if ((user === "r") || (user === "p") || (user === "s")) {
+              if ((user === "r" && computer === "s") ||
+                (user === "s" && computer === "p") ||
+                (user === "p" && computer === "r")) {
+                wins++;
+                }else if (user === computer) {
+                  alert("You have tied")
+                } else {
+                  losses ++
+                }
+      // update screen
+      userInput.textContent = "user: " + user;
+      compInput.textContent = "computer: " + computer;
+      winsSection.textContent = "won: " + wins;
+      lossSection.textContent = "lost: " + losses;
+              }
+          };
+    </script>
+  </body>
+</html>
