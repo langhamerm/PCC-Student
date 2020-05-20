@@ -17,7 +17,8 @@
     />
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
      rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  </head>
+     <!-- <script src="jquery-3.5.1.min.js"></script> -->
+    </head>
   <body>
     <div id="container">
       <div class="jumbotron" style="background-color: purple; color: white;">
@@ -32,11 +33,11 @@
         <!-- instructions container -->
         <div class="col-lg-12">
           
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title text-center">Instructions</h3>
+          <div class="card card-primary">
+            <div class="card-header bg-info">
+              <h3 class="card-title text-center">Instructions</h3>
             </div>
-            <div class="panel-body">
+            <div class="card-body">
               <p>
                 <small>
                   You will be given a random number at the start of the game.
@@ -53,17 +54,17 @@
           </div>
         </div>
       </div>
-      <div class="row"></div>
+      <div class="row">
 
         <!-- Target Score -->
         <div class="col-lg-3">
             
-            <div class="panel panel-primary">
-                  <div class="panel-heading">
-                        <h3 class="panel-title text-center">Target Score:</h3>
+            <div class="card card-primary">
+                  <div class="card-header bg-info">
+                        <h3 class="card-title text-center">Target Score:</h3>
                   </div>
-                  <div class="panel-body">
-                        <h3 class="text=center"><b>777</b></h3>
+                  <div class="card-body">
+                        <h3 class="text-center" id="targetScore"><b></b></h3>
                   </div>
             </div>
             
@@ -71,24 +72,72 @@
  <!-- your Score -->
  <div class="col-lg-3">
             
-    <div class="panel panel-primary">
-          <div class="panel-heading">
-                <h3 class="panel-title text-center">Your Score:</h3>
+    <div class="card card-primary">
+          <div class="card-header bg-info">
+                <h3 class="card-title text-center">Your Score:</h3>
           </div>
-          <div class="panel-body">
-                <h3 class="text=center"><b>55   </b></h3>
+          <div class="card-body">
+                <h3 class="text-center" id="yourScore"><b></b></h3>
           </div>
     </div>
     
 </div>
 
+<!-- Crystals -->
+<div class="col-lg-6">
+
+    <div class="card card-primary">
+        <div class="card-header bg-info">
+              <h3 class="card-title text-center">Crystal Selection</h3>
+        </div>
+        <div class="card-body text-center">
+              <img src="./assets/images/anxiety-crystal.jpg" height="100" id="pink"
+              alt="crystal">
+              <img src="./assets/images/amazing-colorful-quartz-rainbow-flame-260nw-736064353.webp" id="blue" height="100" alt="">
+              <img src="./assets/images/Titanium-quartz-13_m.jpg" height="100" alt="" id="green">
+              <img src="./assets/images/ore-amethyst-on-white-background-picture-id918955036-768x432.jpg" id="purple" height="100" alt="">
+        </div>
+  </div> 
+
+
+</div>
+
 
     </div>
 
-    <script
+    <div class="row">
+        <div class="col-lg-6">            
+                <div class="card card-primary">
+                      <div class="card-header bg-info">
+                            <h3 class="card-title text-center">Win Count:</h3>
+                      </div>
+                      <div class="card-body">
+                            <h3 class="text-center" id="winCount"><b>0</b></h3>
+                      </div>
+                </div>
+                
+            </div>
+
+            <div class="col-lg-6">              
+                  <div class="card card-primary">
+                        <div class="card-header bg-info">
+                              <h3 class="card-title text-center">Lose Count:</h3>
+                        </div>
+                        <div class="card-body">
+                              <h3 class="text-center" id="lossCount"><b>0 </b></h3>
+                        </div>
+                  </div>
+                  
+              </div>
+  
+
+           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+ <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="./assets/javascript/game.js"></script>
   </body>
 </html>
