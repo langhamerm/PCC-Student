@@ -1,74 +1,75 @@
 /**
- * Float Layout Activity
- **/
-
+* Float Layout Activity
+**/
 * {
   box-sizing: border-box;
-  text-align: center;
+ text-align: center; 
 }
+body{
 
-body {
-  font-size: 24px;
-  line-height: 32px;
-  color: #333;
 }
 
 header {
-  padding: 20px;
-  margin-bottom: 20px;
-  color: #333;
-  background: #FFA500;
-}
-
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-
+padding: 20px; 
+margin-bottom: 20px;
+color: #333;
+background: #FFA500;
 }
 
 #left {
-  background-color: #30948D;
-  width: 33.3%;
-  color: #fff;
+  width:33%;
+  color:white;
+  background: #30948D;
+  margin-top:15px;
 }
 
-#middle {
-  width: 33.3%;
-  color: #fff;
-  background: #9E1212;
+#right{
+  width:10%;
+  color:white;
+  background: #30948D; 
+  margin-top:15px;
 }
 
-
-#right {
-  width: 10%;
-  color: #fff;
-  background-color: #30948D;
+#middle{
+ width:33%;
+ color:white;
+background: #9E1212; 
+margin-top:15px;
 }
-
+ 
 #full {
-  overflow: auto;
-  color: #fff;
-  background: darkgoldenrod;
+  width:100%;
+  color:white;
+  background:#394549;
+  margin-top:15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 #division {
-  padding: 20px;
-  margin-top: 20px;
-  background-color: blue;
+  width:100%;
+  color:white;
+  background:#6ea3da;
 }
 
-aside {
-  float: left;
-  background-color: #a6b747;
-  width: 33.3%;
-  height: 200px;
-  margin-left: 30px;
-  padding: 20px;
-  border: 1px solid #eee;
-}
+ aside {
+   width:33%;
+   color:white;
+   background:#a6b747;
+   padding-left: 15px;
+   padding-right:15px;
+   float: left;
+ }
 
-footer {
-  clear: both;
-  padding: 20px;
-  background-color: #FFA500;
-}
+ footer {
+   width:100%;
+   color:white;
+   background:#FFA500;
+  margin-top:15px;
+ }
+
+
+
+

@@ -1,0 +1,38 @@
+header{
+    background-color:black;
+    color:white;
+
+}
+
+h1{
+
+    text-align: center;
+}
+section{
+    float:left;
+}
+
+#s1 {
+    width:70%;
+
+}
+#s2{
+    width:30%;
+}
+
+a{
+    color:red;
+}
+
+body{
+    background-color: rgb(206, 168, 135);
+}
+p{
+    text-align: center;
+    width: 50%;
+    float: right;
+    margin-right:100px;
+}
+
+
+

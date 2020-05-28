@@ -28,13 +28,13 @@
 
 .box-2 {
   position: relative;
-  /* top: 0; */
+  /* top: 100px; */
   /* right: 70px; */
   z-index: 8px;
 }
 
 .box-3 {
-  /* right: 20px; */
+  /* right: 100%x; */
   /* bottom: -10px; */
   z-index:150px;
 }

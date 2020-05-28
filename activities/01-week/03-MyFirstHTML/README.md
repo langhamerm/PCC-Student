@@ -4,7 +4,7 @@
 
     * DOCTYPE declaration
     * Head tag with a title tag
-    * H1 tag with a title of your choice
+    * H1 tag with a title of your choicea
     * Embed an image
     * Create the following three links on your page:
       * One link that is `target="_blank"` so that it opens a new tab when clicked on.

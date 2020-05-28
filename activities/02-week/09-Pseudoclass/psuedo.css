@@ -1,0 +1,15 @@
+a{
+    color:yellow
+}
+a:hover{
+    color: salmon;
+}
+
+a:active{
+    color:turquoise;
+}
+a:focus{
+    color: violet;
+}
+
+
