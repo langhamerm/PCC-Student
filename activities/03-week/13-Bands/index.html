@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var myBands = ["blink 182", "greenday", "new found glory", "good charlotte"];
+
+        var userGuess = prompt("Whats your fav band?");
+
+        var userGuessLower = userGuess.toLowerCase();
+
+        if (myBands.indexOf(userGuessLower) === -1) {
+            alert("Nah! they're lame");
+        }
+        else {
+            alert("WOW love them too!")
+        }
+
+    </script>
+</body>
+</html>

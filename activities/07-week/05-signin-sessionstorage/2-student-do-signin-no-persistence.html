@@ -104,6 +104,22 @@
       $("#email-display").text(email);
       $("#age-display").text(age);
       $("#comment-display").text(comment);
+
+
+
+      // Clear session storage
+      sessionStorage.clear();
+
+      sessionStorage.setItem("name", name);
+      sessionStorage.setItem("email", email);
+      sessionStorage.setItem("age", age);
+      sessionStorage.setItem("comment", comment);
+
+
+      $("#name-display").text(sessionStorage.getItem("name"));
+      $("#email-display").text(sessionStorage.getItem("email"));
+      $("#age-display").text(sessionStorage.getItem("age"));
+      $("#comment-display").text(sessionStorage.getItem("comment"));
     });
 
   </script>
